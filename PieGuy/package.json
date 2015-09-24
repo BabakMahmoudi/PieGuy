@@ -1,0 +1,10 @@
+{
+  "name": "PieGuy",
+  "version": "0.0.0",
+  "description": "PieGuy",
+  "main": "app.js",
+  "author": {
+    "name": "babak",
+    "email": ""
+  }
+}

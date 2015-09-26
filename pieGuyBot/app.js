@@ -1,8 +1,9 @@
-﻿var telegramBot = require('node-telegram-bot-api');
-var fs = require("fs");
-var pi = fs.readFileSync("pi.txt", "ascii");
-var token = ('101950127:AAGU_prhyZSSKwhQQb1eesAdNfANcSaxp4s');
-var bot = new telegramBot(token, { polling: true });
+﻿var telegramBot = require('node-telegram-bot-api')
+, fs = require("fs")
+, pi = fs.readFileSync("pi.txt", "ascii")
+, token = ('101950127:AAGU_prhyZSSKwhQQb1eesAdNfANcSaxp4s')
+, bot = new telegramBot(token, { polling: true })
+, txt = require('./text.js')
 bot.getMe().then(function (me) {
     console.log('hi my name is %s!', me.username);
 });
@@ -42,11 +43,19 @@ bot.on('text', function (msg) {
                 bot.sendMessage(chatId, "not found!");
             }
             break;
-
+        case "/logo":
+            var fullName = msg.from.first_name + "  " + msg.from.last_name;
+            var fName=txt.creatUsernameImage(fullName);
+            setTimeout(function () { 
+                bot.sendPhoto(chatId, __dirname + "/"+fName);
+            }, 3000);
+           
+            break;
         default :
             bot.sendMessage(chatId, "hi " + msg.from.first_name + " " + msg.from.last_name);
             break;
-       
+        
+
     }    ;
 });
 

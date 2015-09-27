@@ -32,6 +32,7 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Compile Include="clock.js" />
+    <Compile Include="test2.js" />
     <Compile Include="text.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />

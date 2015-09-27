@@ -45,11 +45,10 @@ bot.on('text', function (msg) {
             break;
         case "/logo":
             var fullName = msg.from.first_name + "  " + msg.from.last_name;
-            var fName=txt.creatUsernameImage(fullName);
-            setTimeout(function () { 
+            var fName=txt.creatUsernameImage2(arg);
+          
                 bot.sendPhoto(chatId, __dirname + "/"+fName);
-            }, 3000);
-           
+          
             break;
         default :
             bot.sendMessage(chatId, "hi " + msg.from.first_name + " " + msg.from.last_name);

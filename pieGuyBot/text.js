@@ -1,6 +1,8 @@
 ﻿
 var Canvas = require('canvas');
 var fs = require('fs');
+//displayFonts();
+
 function creatUsernameImage(userName) {
     var height = 300;
     var width = 1200;
@@ -42,19 +44,45 @@ function creatUsernameImage2(username)
     
     var Image = Canvas.Image;
     img = new Image;
-    var buff = fs.readFileSync(__dirname + "/template1.png");
+    var buff = fs.readFileSync(__dirname + "/template2.png");
     img.src = buff;
     var x = img.width;
     var canvas = new Canvas(img.width, img.height);
     
     var ctx = canvas.getContext('2d');
     ctx.drawImage(img, 0, 0, img.width, img.height);
-    ctx.font = 'normal 80px "AR CARTER"';
-    ctx.strokeText(username, 67, 150);
-    
+    ctx.font = 'normal 200px "Comic Sans MS"';
+    ctx.fillText(username, 67, 800);
+   
     var fileName = username + ".png";
     fs.writeFileSync(fileName, canvas.toBuffer());
     return fileName;
 };
+
+    function displayFonts() {
+     var canvas = new Canvas(800, 600);
+     var ctx = canvas.getContext('2d');
+     ctx.font = 'normal 80px "AR CARTER"';
+     ctx.fillText("1. AR CARTER", 10, 100);
+
+     ctx.font = 'normal 80px "Impact"';
+     ctx.fillText("2. Impact", 10, 200);
+
+    ctx.font = 'normal 80px "Comic Sans MS"';
+    ctx.fillText("3. Comic Sans MS", 10, 300);
+    
+    ctx.font = 'normal 80px "Segoe Print"';
+    ctx.fillText("4. Segoe Print", 10, 400);
+    
+    ctx.font = 'normal 80px "Fixedsys"';
+    ctx.fillText("5. Fixedsys", 10, 500);
+    
+    var fileName = "fonts.png";
+     fs.writeFileSync(fileName, canvas.toBuffer());
+    return fileName;
+
+    };
+
 exports.creatUsernameImage = creatUsernameImage;
 exports.creatUsernameImage2 = creatUsernameImage2;
+exports.displayFonts = displayFonts;

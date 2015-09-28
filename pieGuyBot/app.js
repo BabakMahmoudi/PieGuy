@@ -48,7 +48,13 @@ bot.on('text', function (msg) {
             var fName=txt.creatUsernameImage2(arg);
           
                 bot.sendPhoto(chatId, __dirname + "/"+fName);
-          
+            break;
+        case "/fonts":
+            //bot.sendPhoto(chatId, __dirname + "/" + fonts);
+            //bot.sendPhoto(chatId, "fonts.png");
+            var fontsFileName = txt.displayFonts();
+            bot.sendPhoto(chatId, __dirname + "/" + fontsFileName);
+
             break;
         default :
             bot.sendMessage(chatId, "hi " + msg.from.first_name + " " + msg.from.last_name);

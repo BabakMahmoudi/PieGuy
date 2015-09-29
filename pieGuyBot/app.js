@@ -47,7 +47,7 @@ bot.on('text', function (msg) {
             break;
         case "/logo":
             var fullName = msg.from.first_name + "  " + msg.from.last_name;
-            var fName = txt.creatUserImage2(arg)
+            var fName = txt.creatUsernameImage2(arg);
           
                 bot.sendPhoto(chatId, __dirname + "/"+fName);
             break;

@@ -58,9 +58,9 @@ bot.on('text', function (msg) {
         case "/font":
             var idx = parseInt(arg);
             console.log(idx);
-            if (idx > 0 && idx < txt.availableFonts.length) {
-                txt.selectedFontIndex = idx;
-                bot.sendMessage(chatId, txt.availableFonts[txt.selectedFontIndex] + " selected");
+            if (idx > -1 && idx < txt.availableFonts.length) {
+                txt.selectFont(idx);
+                bot.sendMessage(chatId, txt.availableFonts[idx] + " selected");     
             }
             else {
                 bot.sendMessage(chatId, "Please choose a number between 0 and 5. Example: /font 1");

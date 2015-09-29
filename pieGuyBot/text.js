@@ -78,7 +78,7 @@ function creatUsernameImage2(username)
     //ctx.font = 'normal 80px "Segoe Print"';
     //ctx.fillText("4. Segoe Print", 10, 400);
     for (var i = 0; i < availableFonts.length; i++) {
-        ctx.font = 'normal 80px ' + availableFonts[i];
+        ctx.font = 'normal 120px ' + availableFonts[i];
         ctx.fillText(i+" " + availableFonts[i] , 10, 90 + i * 100);
     }
     
@@ -87,7 +87,10 @@ function creatUsernameImage2(username)
     return fileName;
 
     };
-
+function selectFont(idx) {
+    selectedFontIndex = idx;
+};
+exports.selectFont = selectFont;
 exports.creatUsernameImage = creatUsernameImage;
 exports.creatUsernameImage2 = creatUsernameImage2;
 exports.displayFonts = displayFonts;

@@ -16,6 +16,8 @@ bot.on('text', function (msg) {
         
         cmd = msg.text.substr(0, msg.text.indexOf(" "));
         arg = msg.text.substr(msg.text.indexOf(" ") + 1, msg.text.length - msg.text.indexOf(" "));
+        
+        
         console.log("cmd='" + cmd + "'" + " arg='" + arg + "'");
         
     }
@@ -45,16 +47,24 @@ bot.on('text', function (msg) {
             break;
         case "/logo":
             var fullName = msg.from.first_name + "  " + msg.from.last_name;
-            var fName=txt.creatUsernameImage2(arg);
+            var fName = txt.creatUserImage2(arg)
           
                 bot.sendPhoto(chatId, __dirname + "/"+fName);
             break;
         case "/fonts":
-            //bot.sendPhoto(chatId, __dirname + "/" + fonts);
-            //bot.sendPhoto(chatId, "fonts.png");
             var fontsFileName = txt.displayFonts();
             bot.sendPhoto(chatId, __dirname + "/" + fontsFileName);
-
+            break;
+        case "/font":
+            var idx = parseInt(arg);
+            console.log(idx);
+            if (idx > 0 && idx < txt.availableFonts.length) {
+                txt.selectedFontIndex = idx;
+                bot.sendMessage(chatId, txt.availableFonts[txt.selectedFontIndex] + " selected");
+            }
+            else {
+                bot.sendMessage(chatId, "Please choose a number between 0 and 5. Example: /font 1");
+            }
             break;
         default :
             bot.sendMessage(chatId, "hi " + msg.from.first_name + " " + msg.from.last_name);

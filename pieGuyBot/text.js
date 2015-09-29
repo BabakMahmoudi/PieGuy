@@ -1,7 +1,9 @@
 ﻿
 var Canvas = require('canvas');
 var fs = require('fs');
-//displayFonts();
+var availableFonts = ['"AR CARTER"', '"Impact"', '"Comic Sans MS"', '"Segoe Print"'];
+var selectedFontIndex = 0;
+
 
 function creatUsernameImage(userName) {
     var height = 300;
@@ -51,7 +53,9 @@ function creatUsernameImage2(username)
     
     var ctx = canvas.getContext('2d');
     ctx.drawImage(img, 0, 0, img.width, img.height);
-    ctx.font = 'normal 200px "Comic Sans MS"';
+    var fontName = availableFonts[selectedFontIndex];
+    console.log('normal 80px ' + fontName);
+    ctx.font = 'normal 80px ' + fontName;
     ctx.fillText(username, 67, 800);
    
     var fileName = username + ".png";
@@ -62,20 +66,21 @@ function creatUsernameImage2(username)
     function displayFonts() {
      var canvas = new Canvas(800, 600);
      var ctx = canvas.getContext('2d');
-     ctx.font = 'normal 80px "AR CARTER"';
-     ctx.fillText("1. AR CARTER", 10, 100);
+    // ctx.font = 'normal 80px "AR CARTER"';
+    // ctx.fillText("1. AR CARTER", 10, 100);
 
-     ctx.font = 'normal 80px "Impact"';
-     ctx.fillText("2. Impact", 10, 200);
+    // ctx.font = 'normal 80px "Impact"';
+    // ctx.fillText("2. Impact", 10, 200);
 
-    ctx.font = 'normal 80px "Comic Sans MS"';
-    ctx.fillText("3. Comic Sans MS", 10, 300);
+    //ctx.font = 'normal 80px "Comic Sans MS"';
+    //ctx.fillText("3. Comic Sans MS", 10, 300);
     
-    ctx.font = 'normal 80px "Segoe Print"';
-    ctx.fillText("4. Segoe Print", 10, 400);
-    
-    ctx.font = 'normal 80px "Fixedsys"';
-    ctx.fillText("5. Fixedsys", 10, 500);
+    //ctx.font = 'normal 80px "Segoe Print"';
+    //ctx.fillText("4. Segoe Print", 10, 400);
+    for (var i = 0; i < availableFonts.length; i++) {
+        ctx.font = 'normal 80px ' + availableFonts[i];
+        ctx.fillText(i+" " + availableFonts[i] , 10, 90 + i * 100);
+    }
     
     var fileName = "fonts.png";
      fs.writeFileSync(fileName, canvas.toBuffer());
@@ -86,3 +91,5 @@ function creatUsernameImage2(username)
 exports.creatUsernameImage = creatUsernameImage;
 exports.creatUsernameImage2 = creatUsernameImage2;
 exports.displayFonts = displayFonts;
+exports.selectedFontIndex = selectedFontIndex
+exports.availableFonts = availableFonts

@@ -4,7 +4,6 @@ var fs = require('fs');
 var availableFonts = ['"AR CARTER"', '"Impact"', '"Comic Sans MS"', '"Segoe Print"'];
 var selectedFontIndex = 0;
 
-
 function creatUsernameImage(userName) {
     var height = 300;
     var width = 1200;
@@ -42,8 +41,6 @@ function creatUsernameImage(userName) {
 
 function creatUsernameImage2(username)
 {
-    
-    
     var Image = Canvas.Image;
     img = new Image;
     var buff = fs.readFileSync(__dirname + "/template2.png");

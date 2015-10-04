@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last modified 10/5/2011 -->
+<!-- -->
+<category><pattern>what is pi?</pattern>
+<template>
+  The number π is a mathematical constant, the ratio of a circle's circumference to its diameter, commonly approximated as 3.14159. It has been represented by the Greek letter "π" since the mid-18th century, though it is also sometimes spelled out as "pi"
+</template>
+</category>
+  <category>
+    <pattern>
+      where did pi come from?</pattern>
+    <template>
+      Succinctly, pi--which is written as the Greek letter for p, or --is the ratio of the circumference of any circle to the diameter of that circle. Regardless of the circle's size, this ratio will always equal pi. In decimal form, the value of pi is approximately 3.14.
+</template>
+  </category>
+<category><pattern>who discovered pi</pattern>
+<template>
+  Archimedes of Syracuse
+  The Babylonians estimated pi to be about 25/8 (3.125), while the Egyptians estimated it to be about 256/81 (roughly 3.16). The Ancient Greek mathematician Archimedes of Syracuse (287-212 BC) is largely considered to be the first to calculate an accurate estimation of the value of pi.
+</template>
+</category>
+<category><pattern>tell me more about Archimedes of Syracuse</pattern>
+<template>
+  he was an Ancient Greek mathematician, physicist, engineer, inventor, and astronomer.[2] Although few details of his life are known, he is regarded as one of the leading scientists in classical antiquity.
+</template>
+</category>
+<category><pattern>when was pi discovered?</pattern>
+<template>212 BC</template>
+</category>
+<category><pattern>when is pi day</pattern>
+<template>March 14 or 3/14</template>
+</category>
+<category><pattern>how pi is calculated</pattern>
+<template>
+  there are 4 methods:
+Method 1 : Calculate Pi Using the Measurements of a Circle
+Method 2 : Calculate Pi Using an Infinite Series
+Method 3 : Calculate Pi Using Buffon's Needle Problem
+Method 4 : Arcsine Function/Inverse Sine Function
+</template>
+</category>
+<category><pattern>tell more about method 1</pattern>
+<template>
+  1 : Make sure you are using a perfect circle. This method won't work with ellipses, ovals or anything but a real circle. A circle is defined as all the points on a plane that are an equal distance from a single center point. The lids of jars are good household objects to use for this exercise.You should be able to calculate pi roughly because in order to get exact results of pi, you will need to have a very thin lead(or whatever you are using). Even the sharpest pencil graphite could be huge to have exact results.
+  2 : Measure the circumference of a circle as accurately as you can. The circumference is the length that goes around the entire edge of the circle. Since the circumference is round, it can be difficult to measure (that's why pi is so important).
+  Lay a string over the circle as closely as you can. Mark the string off where it circles back around, and then measure the string length with a ruler.
+  3 :Measure the diameter of the circle. The diameter runs from one side of the circle to the other through the circle's center point.
+  4 :Use the formula. The circumference of a circle is found with the formula C= π*d = 2*π*r. Thus pi equals a circle's circumference divided by its diameter. Plug your numbers into a calculator: the result should be roughly 3.14.
+  5 :For more accurate results, repeat this process with several different circles, and then average the results. Your measurements might not be perfect on any given circle, but over time they should average out to a pretty accurate calculation of pi.
+</template>
+</category>
+  <category>
+    <pattern>tell more about method 2 </pattern>
+    <template>
+      1 :Use the Gregory-Leibniz series. Mathematicians have found several different mathematical series that, if carried out infinitely, will accurately calculate pi to a great number of decimal places. Some of these are so complex they require supercomputers to process them. One of the simplest, however, is the Gregory-Leibniz series. Though not very efficient, it will get closer and closer to pi with every iteration, accurately producing pi to five decimal places with 500,000 iterations.[2] Here is the formula to apply.
+      π = (4/1) - (4/3) + (4/5) - (4/7) + (4/9) - (4/11) + (4/13) - (4/15) ...
+      Take 4 and subtract 4 divided by 3. Then add 4 divided by 5. Then subtract 4 divided by 7. Continue alternating between adding and subtracting fractions with a numerator of 4 and a denominator of each subsequent odd number. The more times you do this, the closer you will get to pi.
+      2 :ry the Nilakantha series. This is another infinite series to calculate pi that is fairly easy to understand. While somewhat more complicated, it converges on pi much quicker than the Leibniz formula.
+      π = 3 + 4/(2*3*4) - 4/(4*5*6) + 4/(6*7*8) - 4/(8*9*10) + 4/(10*11*12) - 4/(12*13*14) ...
+      For this formula, take three and start alternating between adding and subtracting fractions with numerators of 4 and denominators that are the product of three consecutive integers which increase with every new iteration. Each subsequent fraction begins its set of integers with the highest one used in the previous fraction. Carry this out even a few times and the results get fairly close to pi.
+    </template>
+  </category>
+<category><pattern>tell more about method 3</pattern>
+<template>
+  Try this experiment to calculate pi by throwing hotdogs. Pi, it turns out, also has a place in an interesting thought experiment called Buffon's Needle Problem, which seeks to determine the likelihood that randomly tossed uniform elongated objects will land either between or crossing a series of parallel lines on the floor. It turns out that if the distance between the lines is the same as the length of the tossed objects, the number of times the objects land across the lines out of a large number of throws can be used to calculate pi. Check out the above WikiHow article link for a fun breakdown of this experiment using thrown food.
+  Scientists and mathematicians have not figured out a way to calculate pi exactly, since they have not been able to find a material so thin that it will work to find exact calculations.
+</template>
+</category>
+<category><pattern>tell more about method 4</pattern>
+<template>
+  1 :Pick any number between -1 and 1. This is because the Arcsin function is undefined for arguments greater than 1 or less than -1.
+  2: Plug your number into the following formula, and the result will be roughly equal to pi.
+  pi = 2 * (Arcsin(sqrt(1 - x^2)) + abs(Arcsin(x))).
+  Arcsin refers to the inverse sine in radians
+  Sqrt is is short for square root
+  Abs is short for absolute value
+  x^2 refers to an exponent, in this case, x squared.
+</template>
+</category>
+  <category>
+    <pattern>how does pi work</pattern>
+    <template>
+      Conversely, the circumference is equal to pi times the diameter (c = πd). No matter how large or small a circle is, pi will always work out to be the same number. Pi is an irrational number, which means that it is a real number with nonrepeating decimal expansion.
+    </template>
+  </category>
+  <category>
+    <pattern>tell me the first 100 digits of pi</pattern>
+    <template>
+      3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
+    </template>
+  </category>
+  <category>
+    <pattern>
+      <that>* digits * pi *?</that>
+    </pattern>
+    <template>13.3 trillion</template>
+  </category>
+  <category>
+    <pattern>who calculated 13 trillion digits of pi?</pattern>
+    <template>Supercomputers have discovered up to 13 trillion digits of pi, a math constant that refers to a circle's circumference to its diameter</template>
+  </category>
+  <category>
+    <pattern>send me the 13 trillion digits</pattern>
+    <template>who do you think i am?GOD?</template>
+  </category>
+  <category>
+    <pattern>how many digits of pi do you know?</pattern>
+    <template>1,000 digits of it</template>
+  </category>
+  <category>
+    <pattern>send me 1000 digits of pi</pattern>
+    <template>
+      3.14159265358979323846264338327950288419716939937510
+      58209749445923078164062862089986280348253421170679
+      82148086513282306647093844609550582231725359408128
+      48111745028410270193852110555964462294895493038196
+      44288109756659334461284756482337867831652712019091
+      45648566923460348610454326648213393607260249141273
+      72458700660631558817488152092096282925409171536436
+      78925903600113305305488204665213841469519415116094
+      33057270365759591953092186117381932611793105118548
+      07446237996274956735188575272489122793818301194912
+      98336733624406566430860213949463952247371907021798
+      60943702770539217176293176752384674818467669405132
+      00056812714526356082778577134275778960917363717872
+      14684409012249534301465495853710507922796892589235
+      42019956112129021960864034418159813629774771309960
+      51870721134999999837297804995105973173281609631859
+      50244594553469083026425223082533446850352619311881
+      71010003137838752886587533208381420617177669147303
+      59825349042875546873115956286388235378759375195778
+      18577805321712268066130019278766111959092164201989
+    </template>
+  </category>
+  <category>
+    <pattern>that's a small number</pattern>
+    <template>yeah?how many do you know?</template>
+  </category>
+  <category>
+    <pattern>give me an image of pi</pattern>
+    <template>sendPiImage</template>
+  </category>
+</aiml>

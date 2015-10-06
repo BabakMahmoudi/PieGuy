@@ -9,36 +9,35 @@
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Last modified 10/5/2011 -->
 <!-- -->
-<category><pattern>what is pi?</pattern>
+<category><pattern>* is pi?</pattern>
 <template>
   The number π is a mathematical constant, the ratio of a circle's circumference to its diameter, commonly approximated as 3.14159. It has been represented by the Greek letter "π" since the mid-18th century, though it is also sometimes spelled out as "pi"
 </template>
 </category>
   <category>
-    <pattern>
-      where did pi come from?</pattern>
+    <pattern>* did pi come from?</pattern>
     <template>
-      Succinctly, pi--which is written as the Greek letter for p, or --is the ratio of the circumference of any circle to the diameter of that circle. Regardless of the circle's size, this ratio will always equal pi. In decimal form, the value of pi is approximately 3.14.
-</template>
+     past
+    </template>
   </category>
-<category><pattern>who discovered pi</pattern>
+<category><pattern>* discovered pi</pattern>
 <template>
   Archimedes of Syracuse
   The Babylonians estimated pi to be about 25/8 (3.125), while the Egyptians estimated it to be about 256/81 (roughly 3.16). The Ancient Greek mathematician Archimedes of Syracuse (287-212 BC) is largely considered to be the first to calculate an accurate estimation of the value of pi.
 </template>
 </category>
-<category><pattern>tell me more about Archimedes of Syracuse</pattern>
+<category><pattern>* Archimedes *</pattern>
 <template>
   he was an Ancient Greek mathematician, physicist, engineer, inventor, and astronomer.[2] Although few details of his life are known, he is regarded as one of the leading scientists in classical antiquity.
 </template>
 </category>
-<category><pattern>when was pi discovered?</pattern>
+<category><pattern>* pi discovered?</pattern>
 <template>212 BC</template>
 </category>
 <category><pattern>when is pi day</pattern>
 <template>March 14 or 3/14</template>
 </category>
-<category><pattern>how pi is calculated</pattern>
+<category><pattern>* calculated</pattern>
 <template>
   there are 4 methods:
 Method 1 : Calculate Pi Using the Measurements of a Circle
@@ -47,7 +46,7 @@ Method 3 : Calculate Pi Using Buffon's Needle Problem
 Method 4 : Arcsine Function/Inverse Sine Function
 </template>
 </category>
-<category><pattern>tell more about method 1</pattern>
+<category><pattern>* method 1</pattern>
 <template>
   1 : Make sure you are using a perfect circle. This method won't work with ellipses, ovals or anything but a real circle. A circle is defined as all the points on a plane that are an equal distance from a single center point. The lids of jars are good household objects to use for this exercise.You should be able to calculate pi roughly because in order to get exact results of pi, you will need to have a very thin lead(or whatever you are using). Even the sharpest pencil graphite could be huge to have exact results.
   2 : Measure the circumference of a circle as accurately as you can. The circumference is the length that goes around the entire edge of the circle. Since the circumference is round, it can be difficult to measure (that's why pi is so important).
@@ -58,7 +57,7 @@ Method 4 : Arcsine Function/Inverse Sine Function
 </template>
 </category>
   <category>
-    <pattern>tell more about method 2 </pattern>
+    <pattern>* 2 </pattern>
     <template>
       1 :Use the Gregory-Leibniz series. Mathematicians have found several different mathematical series that, if carried out infinitely, will accurately calculate pi to a great number of decimal places. Some of these are so complex they require supercomputers to process them. One of the simplest, however, is the Gregory-Leibniz series. Though not very efficient, it will get closer and closer to pi with every iteration, accurately producing pi to five decimal places with 500,000 iterations.[2] Here is the formula to apply.
       π = (4/1) - (4/3) + (4/5) - (4/7) + (4/9) - (4/11) + (4/13) - (4/15) ...
@@ -68,13 +67,13 @@ Method 4 : Arcsine Function/Inverse Sine Function
       For this formula, take three and start alternating between adding and subtracting fractions with numerators of 4 and denominators that are the product of three consecutive integers which increase with every new iteration. Each subsequent fraction begins its set of integers with the highest one used in the previous fraction. Carry this out even a few times and the results get fairly close to pi.
     </template>
   </category>
-<category><pattern>tell more about method 3</pattern>
+<category><pattern>* method 3</pattern>
 <template>
   Try this experiment to calculate pi by throwing hotdogs. Pi, it turns out, also has a place in an interesting thought experiment called Buffon's Needle Problem, which seeks to determine the likelihood that randomly tossed uniform elongated objects will land either between or crossing a series of parallel lines on the floor. It turns out that if the distance between the lines is the same as the length of the tossed objects, the number of times the objects land across the lines out of a large number of throws can be used to calculate pi. Check out the above WikiHow article link for a fun breakdown of this experiment using thrown food.
   Scientists and mathematicians have not figured out a way to calculate pi exactly, since they have not been able to find a material so thin that it will work to find exact calculations.
 </template>
 </category>
-<category><pattern>tell more about method 4</pattern>
+<category><pattern>* 4</pattern>
 <template>
   1 :Pick any number between -1 and 1. This is because the Arcsin function is undefined for arguments greater than 1 or less than -1.
   2: Plug your number into the following formula, and the result will be roughly equal to pi.
@@ -86,25 +85,23 @@ Method 4 : Arcsine Function/Inverse Sine Function
 </template>
 </category>
   <category>
-    <pattern>how does pi work</pattern>
+    <pattern>* pi work</pattern>
     <template>
       Conversely, the circumference is equal to pi times the diameter (c = πd). No matter how large or small a circle is, pi will always work out to be the same number. Pi is an irrational number, which means that it is a real number with nonrepeating decimal expansion.
     </template>
   </category>
   <category>
-    <pattern>tell me the first 100 digits of pi</pattern>
+    <pattern>* 100 digits of pi</pattern>
     <template>
       3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
     </template>
   </category>
   <category>
-    <pattern>
-      <that>* digits * pi *?</that>
-    </pattern>
+    <pattern>* digits of pi has been discovered?</pattern>
     <template>13.3 trillion</template>
   </category>
   <category>
-    <pattern>who calculated 13 trillion digits of pi?</pattern>
+    <pattern>* calculated 13 trillion digits of pi?</pattern>
     <template>Supercomputers have discovered up to 13 trillion digits of pi, a math constant that refers to a circle's circumference to its diameter</template>
   </category>
   <category>
@@ -112,11 +109,11 @@ Method 4 : Arcsine Function/Inverse Sine Function
     <template>who do you think i am?GOD?</template>
   </category>
   <category>
-    <pattern>how many digits of pi do you know?</pattern>
+    <pattern>* digits of pi do you know?</pattern>
     <template>1,000 digits of it</template>
   </category>
   <category>
-    <pattern>send me 1000 digits of pi</pattern>
+    <pattern>* 1000 digits of pi</pattern>
     <template>
       3.14159265358979323846264338327950288419716939937510
       58209749445923078164062862089986280348253421170679
@@ -141,11 +138,117 @@ Method 4 : Arcsine Function/Inverse Sine Function
     </template>
   </category>
   <category>
-    <pattern>that's a small number</pattern>
-    <template>yeah?how many do you know?</template>
-  </category>
-  <category>
     <pattern>give me an image of pi</pattern>
     <template>sendPiImage</template>
   </category>
+  <category>
+    <pattern>* movies about pi?</pattern>
+    <template>
+      here is some movies i found:
+      _ Pi (1998)
+      _ Life of Pi (2012)
+    </template>
+  </category>
+  <category>
+    <pattern>* more about pi</pattern>
+    <template>
+      Pi
+      1998 film
+      7.5/10·IMDb
+      3.5/4·Roger Ebert
+      87%·Rotten Tomatoes
+      72%·Metacritic
+      Initial release: July 10, 1998 (USA)
+      Director: Darren Aronofsky
+      Music composed by: Clint Mansell
+      Budget: 60,000 USD
+      Screenplay: Darren Aronofsky, Sean Gullette
+      Numbers whiz Max Cohen (Sean Gullette) is stunted by psychological delusions of paranoia and debilitating headaches. He lives in a messy Chinatown apartment, where he tinkers with equations and his homemade, super-advanced computer. One day, however, Cohen encounters a mysterious number. Soon after reporting his discovery to his mentor (Mark Margolis) and to a religious friend (Ben Shenkman), he finds himself the target of ill-intentioned Wall Street agents bent on using the number for profit.
+      Cast :
+      Sean Gullette as Maximillian "Max" Cohen
+      Mark Margolis as Sol Robeson
+      Ben Shenkman as Lenny Meyer
+      Samia Shoaib as Devi
+      Pamela Hart as Marcy Dawson
+      Stephen Pearlman as Rabbi Cohen
+      Ajay Naidu as Farrouhk
+      Kristyn Mae-Anne Lao as Jenna
+      Lauren Fox as Jenny Robeson
+      Clint Mansell as Photographer
+
+    </template>
+  </category>
+  <category>
+    <pattern>* more about life of pi</pattern>
+    <template>
+      Life of Pi
+      2012 film
+      8/10.IMDb
+      4/4.Roger Ebert
+      87%.Rotten Tomatoes
+      After deciding to sell their zoo in India and move to Canada, Santosh and Gita Patel board a freighter with their sons and a few remaining animals. Tragedy strikes when a terrible storm sinks the ship, leaving the Patels' teenage son, Pi (Suraj Sharma), as the only human survivor. However, Pi is not alone; a fearsome Bengal tiger has also found refuge aboard the lifeboat. As days turn into weeks and weeks drag into months, Pi and the tiger must learn to trust each other if both are to survive.
+      Initial release: November 21, 2012 (USA)
+      Director: Ang Lee
+      Adapted from: Life of Pi
+      Awards :
+      Academy Award for Best Director
+      2013 · Ang Lee
+      Academy Award for Best Cinematography
+      2013 · Claudio Miranda
+      Academy Award for Best Visual Effects
+      2013 · Erik De Boer, Bill Westenhofer, Donald Elliott, ...
+      Academy Award for Best Original Music Score
+      2013 · Mychael Danna
+      Golden Globe Award for Best Original Score
+      2013 · Mychael Danna
+      MTV Movie Award for Best Scared-As-Shit Performance
+      2013 · Suraj Sharma
+      Broadcast Film Critics Association Award for Best Cinematography
+      2013 · Claudio Miranda
+      BFCA Critics' Choice Award for Best Visual Effects
+      2013
+      BAFTA Award for Best Special Visual Effects
+      2013 · Erik De Boer, Bill Westenhofer, Donald Elliott, ...
+      BAFTA Award for Best Cinematography
+      2013 · Claudio Miranda
+      Satellite Award for Best Cinematography
+      2012 · Claudio Miranda
+      Satellite Award for Best Adapted Screenplay
+      2012 · David Magee
+      cast :
+      Gautam Belur as Pi, age 5
+      Ayush Tandon as Pi, age 11/12
+      Suraj Sharma as Pi, age 16
+      Irrfan Khan as Pi, adult
+      Rafe Spall as Yann Martel, the real-life Canadian novelist who wrote this story.
+      Tabu as Gita Patel, Pi's mother
+      Adil Hussain as Santosh Patel, Pi's father
+      Ravi Patel, Pi's older brother:
+      Ayan Khan as Ravi, age 7
+      Mohamed Abbas Khaleeli as Ravi, age 13/14
+      Vibish Sivakumar as Ravi, age 18/19
+      Gérard Depardieu as the Cook
+      Po-Chieh Wang as the Sailor
+      Shravanthi Sainath as Anandi, Pi's teenage girlfriend
+      Andrea Di Stefano as the Priest
+      Elie Alouf as Francis "Mamaji", Pi's uncle
+    </template>
+  </category>
+  <category>
+    <pattern>* books about pi</pattern>
+    <template>
+      here the things i found:
+      1: A History of Pi
+      2: The Joy of Pi
+      3: Pi: A Source Book
+      4: Pi - Unleashed
+      5: Le Fascinant Nombre Pi (Bibliotheque Pour la Science)
+      6: 3.1416 and All That
+      7: Sir Cumference and the Dragon of Pi (A Math Adventure)
+      8: Life of Pi
+      9: The Pi Conspiracy 
+    </template>
+  </category>
+  
+
 </aiml>

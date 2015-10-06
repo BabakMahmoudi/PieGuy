@@ -27,7 +27,7 @@ bot.on('text', function (msg) {
             bot.sendMessage(chatId, x);
             break;
         case "/p":
-            bot.sendPhoto(chatId, "piPic.png");
+            
             break;
         case "/search":
             
